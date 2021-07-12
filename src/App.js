@@ -47,8 +47,11 @@ function App() {
       drawRect(obj, ctx); 
     }
   };
-
-  useEffect(()=>{runCoco()},[]);
+  
+  useEffect(() => {
+   runCoco()
+   // eslint-disable-next-line react-hooks/exhaustive-deps
+}, []) 
 
   return (
     <div className="App">
